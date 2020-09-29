@@ -1,0 +1,363 @@
+<html>
+  <head>
+		   <script src="boostrap.min.js" language="text/javascript"></script>
+		   <style>
+			a:hover 
+			{
+				background-color:cadetblue;
+				color:yellow;
+			}   
+			#grad1 { background: linear-gradient(to bottom right,lightpink ,lightyellow,lightgreen,lightblue, white,lightgoldenrodyellow)  last }			
+			#grad2 {background: linear-gradient(to bottom right ,chocolate,white)  last }
+			</style>
+		   <link rel="stylesheet" href="admin.css" media="all">
+		   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="bootstrap.min.css" media="all">
+		   <script src="jquery-1.8.3.min.js" language="text/javascript"></script>
+		   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		   <script type="text/javascript">
+			function getstarted()
+			{
+				$("#user_message").show();	
+				$("#getstarted").hide();
+			}
+			function Home()
+			{
+				$("#getstarted").show();
+				$("#user_message").hide();
+				$("#rating").hide();
+				$("#request").hide();
+				$("#worker").hide();
+			}
+			function Worker()
+			{	
+				$("#user_message").hide();
+				$("#getstarted").hide();
+				$("#worker").show();
+				$("#rating").hide();
+				$("#request").hide();
+			}
+			function Rating()
+			{	
+				$("#user_message").hide();
+				$("#getstarted").hide();
+				$("#worker").hide();
+				$("#rating").show();
+				$("#request").hide();
+			}
+			function Request()
+			{
+				$("#rating").hide();
+				$("#request").show();
+				$("#worker").hide();
+				$("#getstarted").hide();
+				$("#user_message").hide();
+			}
+			function Feedback()
+			{
+				$("#user_message").show();
+				$("#worker").hide();
+				$("#getstarted").hide();
+				$("#rating").hide();
+				$("#request").hide();
+			}
+			function Reply1()
+			{
+				$("#reply1").show();
+			}
+			function Reply2()
+			{
+				$("#reply2").show();
+			}
+			function Reply3()
+			{
+				$("#reply3").show();
+			}
+			function msgclose1()
+			{				
+				$("#reply1").hide();
+			}
+			function msgclose2()
+			{				
+				$("#reply2").hide();
+			}
+			function msgclose3()
+			{				
+				$("#reply3").hide();
+			}
+			function Send()
+			{
+				alert("message forwarded");
+				$("#reply1").hide();
+				$("#reply2").hide();
+				$("#reply3").hide();
+			}
+           </script>
+  </head>
+  <body  id="grad1"   >
+	<form>
+	     <div class="row">
+			<div id="pcs" class="col-md-12"> 
+				<center> 
+					<img src="pcs.jpg" height="19%" width="100%" style="border:4%;"></img>
+				</center>
+			</div>			
+	     </div>
+			<div class="row">
+				<div class="col-lg-12" >
+                       <ul class="nav nav-tabs nav-justified" style="background-color:#563d7c;border:1px solid black;">
+							<li><a href="#" style="font-size:23px;color:lightyellow;font-weight:bold;" onclick="Home()" >Home <i class="fa fa-home fa-lg"  style="color:lightgreen;"></i></a></li>
+							<li><a href="#" style="font-size:23px;color:lightyellow;font-weight:bold;"  onclick="Worker()" >Workers <i class="fa fa-users fa-fw" style="color:lightblue;"></i></a></li>
+							<li><a href="#" style="font-size:23px;color:lightyellow;font-weight:bold;" onclick="Rating()" >Ratings <i class="fa fa-star checked" style="color:gold;"></i></a></li>
+							<li><a href="#" style="font-size:23px;color:lightyellow;font-weight:bold;" onclick="Request()">Requests <i class="fa fa-envelope-o fa-fw" style="color:lawngreen;"></i></a></li>
+							<li><a href="#" style="font-size:23px;color:lightyellow;font-weight:bold;" onclick="Feedback()">Feedback <i class="fa fa-flag" style="color:orange;"></i></a></li>
+							<li><a href="login.html" style="font-size:23px;color:lightyellow;font-weight:bold;" >Logout <i class="fa fa-power-off" style="color:fuchsia;"></i></a></li>
+					   </ul>
+				</div>
+			</div>
+			<br><br><br><br>
+			<div id="getstarted">
+			  <div class="container" >
+				   <div class="jumbotron"  id="grad2" style="width:1200px;border-radius:20px;;border:2px solid black;">
+				   <center>
+						<div class="page-header">
+							<txt>Get Started with User
+							Requirements <br> </txt>		
+						</div><br>
+						<p1>
+							Hello,People are waiting for your services. go get started.
+						</p1><br><br>
+						<input type="button" class="btn btn-primary" href="#"  value="Getstarted" onclick="getstarted()" id="gets" >
+					</center>
+				   </div><!--closing jumbotron-->
+			  </div><!--closing container-->
+			  <br><br><br><br>
+			</div>
+
+			<div id="user_message" hidden>
+				<h1 style="font-weight:bold;font-size:50px;color:blue;font-family:monotype corsiva;text-align:center;padding-bottom:5%;">
+					Feedback
+				</h1>
+				<hr>
+				<h2 style="padding-left:7%;" > Ravi </h2><br><br>
+				<p style="font-size:20px;padding-left:7%;"> Your PCS team is helping us by introducing the new workers for completion of Task.</p> <br><br>
+				<hr>
+				<h2 style="padding-left:7%;"> Maghnus </h2><br><br>
+				<p style="font-size:20px;padding-left:7%;"> Thanks for PCS.(Sending Experienced Workers.) </p><br><br>
+				<hr>
+				<h2 style="padding-left:7%;"> Alangein </h2><br><br>
+				<p style="font-size:20px;padding-left:7%;"> Payment is somewhat high. Try to decrease the payment.</p><br><br>
+				<hr>
+				<h2 style="padding-left:7%;"> Nithin </h2><br><br>
+				<p style="font-size:20px;padding-left:7%;"> Sir we didn't satisfied with your service. try to increase the population of worthfull workers.</p><br><br><br><br>
+			</div>
+			<div id="worker" hidden>
+				<center>
+					<h1 style="color:red;font-family:monotype corsiva;"> <b> Workers Details </b> </h1>
+					<br><br><br>
+					<table class="table table-hover" border="5px" style="background-color:lightblue;">
+						<tr >
+							<th style="text-align:center;"> S.No </th>
+							<th style="text-align:center;"> Name </th>
+							<th style="text-align:center;"> Id </th>
+							<th style="text-align:center;"> Date/Time </th>
+							<th style="text-align:center;"> status </th>
+						</tr>
+						<tr style="text-align:center;">
+							<td> 1. </td>
+							<td> Raju </td>
+							<td> Electrician12 </td>
+							<td> 20/12/2017 </td>
+							<td> waiting....</td>
+						</tr>
+						<tr style="text-align:center;">
+							<td> 2. </td>
+							<td> jagadesh </td>
+							<td> slw3 </td>
+							<td> 28/12/2017 </td>
+							<td> Successfully done</td>
+						</tr>
+						<tr style="text-align:center;">
+							<td> 3. </td>
+							<td> yakub </td>
+							<td> cleaner34 </td>
+							<td> 07/11/2017 </td>
+							<td> Successfully done</td>
+						</tr>
+					</table>
+					<br><br><br><br>
+				</center>
+			</div>
+			<div id="rating" hidden>
+				<center>
+					<h1> User Ratings </h1>
+						<br><br>
+						<table class="table table-hover" border="5px" style="background-color:lightblue;" >
+							<tr style="text-align:center;">
+								<th style="text-align:center;"> S.No </th>
+								<th style="text-align:center;"> User Name </th>
+								<th style="text-align:center;"> Rating </th>
+								<th style="text-align:center;"> remarks </th>
+							</tr>
+							<tr style="text-align:center;">
+								<td> 1. </td>
+								<td> Sonu </td>
+								<td> 
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star "></span>
+									<span class="fa fa-star "></span>
+									<span class="fa fa-star "></span>
+								</td>
+								<td> Average </td>
+							</tr>
+							<tr style="text-align:center;">
+								<td> 2. </td>
+								<td> charan </td>
+								<td > 
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star "></span>
+								</td>					
+								<td> good </td>
+							</tr>
+							<tr style="text-align:center;">
+								<td> 3. </td>
+								<td> ramu </td>
+								<td>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+								</td>
+								<td> Excellent </td>
+							</tr>
+						</table>
+						<br><br><br>
+				</center>
+			</div>
+			<div id="request" hidden>
+				<center>
+				<h1>User Requests</h1>
+					<br><br>
+						<div style="text-align:center;border:2px solid blue;background:cyan;">
+							
+							<h2><b><u> K.sindhu </u></b></h2>
+							<p style="font-size:20px;"> 
+							Issue :  Washing machine repair <br>
+							House no:  # 16-8-185<br>
+							Pincode :  506013<br>
+							Street no./name :  Abbanikunta,warangal.<br>
+							Message : hello, sir we have a trouble with our washing machine so please check that our product would recover soon....<br>
+							Date : 16/4/2018 03:00pm - 9:00pm<br>
+							<h3> <a href="#" onclick="Reply1()" >Leave a reply </a></h3><br>
+							<div id="reply1" hidden>
+								<center>
+									<textarea rows="5" cols="30"></textarea><br><br>
+									<input type="button" class="btn btn-primary" value="send" onclick="Send()" > <input type="button" class="btn btn-default" value="close" onclick="msgclose1()"><br>
+								</center>
+							</div>
+
+							</p>
+							
+						</div><br>
+						<div style="text-align:center;border:2px solid blue;background:pink;">
+							
+							<h2><b><u> N.Ranjith</u></b></h2>
+							<p style="font-size:20px;"> 
+							Issue :  Software Consultant <br>
+							House no:  # 127-52/32<br>
+							Pincode :  500013<br>
+							Street no./name :  medhipatnam,Hyderabad.<br>
+							Message : i have trouble with my laapy i think so it is os problem.<br>
+							Date : 02/6/2017  10:00am - 5:00pm <br><br>
+							<img src="hd.jpg" height="200px" width="300px" style="border:3px solid black"></img><br>
+							<h3> <a href="#" onclick="Reply2()" >Leave a reply </a></h3><br>
+							<div id="reply2" hidden>
+								<center>
+									<textarea rows="5" cols="30"></textarea><br><br>
+									<input type="button" class="btn btn-primary" value="send" onclick="Send()" > <input type="button" class="btn btn-default" value="Close" onclick="msgclose2()"><br>
+								</center>
+							</div>
+							</p>
+						</div><br>
+						<div style="text-align:center;border:2px solid blue;background:orange;">
+							
+							<h2><b><u> Charan </u></b></h2>
+							<p style="font-size:20px;"> 
+							Issue :  Painter <br>
+							House no:  # 16-8-185<br>
+							Pincode :  506013<br>
+							Street no./name :  Abbanikunta,warangal.<br>
+							Message : Sir i need a painter to paint my house i have uploaded my house pic for your understanding so send painter quickly.<br>
+							Date : 21/12/2018  11:00am - 3:00pm<br>
+							<h3> <a href="#" onclick="Reply3()" >Leave a reply </a></h3><br>
+							<div id="reply3" hidden>
+								<center>
+									<textarea rows="5" cols="30"></textarea><br><br>
+									<input type="button" class="btn btn-primary" value="send" onclick="Send()" > <input type="button" class="btn btn-default" value="close" onclick="msgclose3()"><br>
+								</center>
+							</div>
+							</p>
+							
+						</div><br>
+				</center>
+			</div>
+					
+			</div>
+			<div class="row">
+			<div class="container" style="width:100%;background:cadetblue;color:black;font-size:20px;">
+				<!-- <div class="jumbotron" style="height:40%;background:#cdbfe3;"> -->
+				<center>
+					<div class="col-lg-4 col-sm-4" style="border-right-style:groove;border-color:black;">
+							<div class="page-header" >
+								<b style="font-size:25px;font-weight:bold;color:darkslateblue;">
+								About company
+								</b>
+							</div>
+							<a href="E:\Project\main\terms.html" style="color:black;" >   Terms	</a> <br><br>
+							<a href="#" onclick="Rating()" style="color:black;" >  Ratings  </a><br><br>
+							<a href="#" onclick="getstarted()" style="color:black;" >   Discussions   </a><br>
+					</div>
+					<div class="col-lg-4 col-sm-4" style="border-right-style:groove;border-color:black">
+							<div class="page-header">
+								<b style="font-size:25px;font-weight:bold;color:darkslateblue;">
+								Workers ativity
+								</b>
+							</div>
+							<a href="#" onclick="Request()" style="color:black;"> Repairing  </a> <br><br>
+							<a href="#" onclick="Request()" style="color:black;">  cleaning  </a> <br><br>
+							<a href="#" onclick="Request()" style="color:black;">  Renovation  </a><br>
+					</div>
+					<div class="col-lg-4 col-sm-4" style="border-right-style:groove;border-color:black">
+							<div class="page-header">
+								<b style="font-size:25px;font-weight:bold;color:darkslateblue;">
+								Following
+								</b>
+							</div>
+							<a href="https://www.facebook.com/" style="color:black;" data-toggle="tooltip" title="find the following on facebook">
+							facebook
+								<i class="fa fa-facebook fa-lg"></i>
+							</a>
+							<br><br>
+							<a href="https://www.twitter.com/" style="color:black;" data-toggle="tooltip" title="find the following on twitter"> 
+							twitter 
+								<i class="fa fa-twitter fa-lg"></i>						
+							</a>
+							<br><br>
+							<a href="https://www.instagram.com/" style="color:black;" data-toggle="tooltip" title="Find the following on instagram">
+							instagram
+								<i class="fa fa-instagram fa-lg"></i>
+							</a>
+							<br>
+					</div>
+					</center>
+				</div>
+			</div>
+		</div>
+	</form>
+  </body>
+</html>
