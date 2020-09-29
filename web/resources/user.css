@@ -1,0 +1,16 @@
+.btn-change{
+    height: 45px;
+    width: 110px;
+    border:20%;
+	border-color:blue;
+	border-radius:20px;
+	color:blue;
+	background-color:white;
+}
+txt1{font-size:80px;font-family:dosis;color:darkslateblue;}
+small{font-size:20px;text-shadow:2px 2px 2px silver;}
+p{color:darkslateblue;}
+loc{font-size:60px;color:gold;text-shadow:2px 1px 1px black;font-family:monotype corsiva;}
+layout{font-size:50px;color:red;text-shadow:2px 1px 1px black;font-family:elephant;}
+font{font-size:20px;}
+b1{font-family:monotype corsiva;font-size:35px;color:green;}
