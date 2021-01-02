@@ -1,4 +1,4 @@
-# Personal-Consultancy-Service
+# Public-Consultancy-Service
 
 Pre-requisites for this project 
 * Apache tomcat server to be installed in your machine
